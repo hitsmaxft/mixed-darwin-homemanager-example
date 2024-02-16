@@ -1,9 +1,9 @@
 {
-  description = "flake";
+  description = "flake: home-manager configuration works both for darwin module or standalone";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    home-manager.url = "github:nix-community/home-manager";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-23.11-darwin";
+    home-manager.url = "github:nix-community/home-manager/release-23.11";
     flake-utils.url = "github:numtide/flake-utils";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
